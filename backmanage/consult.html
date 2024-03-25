@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>法律咨询</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" type="text/css" href="js/select.dataTables.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="images/favicon.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png" />
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="../assets/css/bootstrap-5.0.0-alpha.min.css" />
+  <link rel="stylesheet" href="../assets/css/LineIcons.2.0.css" />
+  <link rel="stylesheet" href="../assets/css/animate.css" />
+  <link rel="stylesheet" href="../assets/css/tiny-slider.css" />
+  <link rel="stylesheet" href="../assets/css/glightbox.min.css" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+
+
+
+
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="mynav navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <style>
+        .mynav {
+          height: 68px;
+        }
+      </style>
+
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand" href="index.html">
+          <img src="../assets/img/logo/logo.svg" alt="Logo" />
+        </a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+
+            <form action="#" class="search-form thisheader">
+              <input type="text" placeholder="Search" />
+              <button type="submit">
+                <i class="lni lni-search-alt"></i>
+              </button>
+            </form>
+            <style>
+              .thisheader {
+                height: 50px;
+                box-shadow: 3px 3px 10px rgb(153, 124, 190),
+                  -3px -3px 10px rgb(178, 220, 255);
+                letter-spacing: 2px;
+              }
+
+              .thisheader:hover {
+                box-shadow: 3px 3px 10px rgb(176, 138, 225),
+                  -3px -3px 10px rgb(178, 179, 255);
+                letter-spacing: 2px;
+              }
+
+              .thisheader:focus {
+                box-shadow: 3px 3px 10px rgb(153, 124, 190),
+                  -3px -3px 10px rgb(178, 220, 255);
+                letter-spacing: 2px;
+              }
+            </style>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-toggle="dropdown">
+              <i class="icon-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content">
+                  <h6 class="preview-subject font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../assets/img/team/zhao.png" alt="profile" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="index_nor.html">
+                <i class="ti-settings text-primary"></i>
+                个人主页
+              </a>
+              <a class="dropdown-item" href="index_nor.html">
+                <i class="ti-power-off text-primary"></i>
+                登出
+              </a>
+            </div>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-flex">
+            <a class="nav-link" href="#">
+              <i class="icon-ellipsis"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+
+
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <style>
+            .balala {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .hahaha {
+              background-color: #f5f7ff;
+              box-shadow: inset 0 -5px 5px rgba(0, 0, 0, 0.01);
+              /* 底部阴影效果 */
+              font-size: 18px;
+              border-radius: 10px;
+              height: 65px;
+              transition: background-color 2.8s ease-out, box-shadow 0.8s ease-out;
+            }
+
+            .hahaha:hover {
+              background-color: rgb(249, 249, 253);
+              background-image: linear-gradient(150deg, rgba(88, 105, 239, 1), rgb(108, 64, 219));
+              color: aliceblue;
+              box-shadow: 2px 2px 10px rgba(88, 105, 239, 0.3);
+            }
+          </style>
+          <li class="con">
+            <a class="con balala nav-link" id="con" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span>&nbsp&nbsp法律咨询</span>
+              <style>
+                .con {
+                  font-size: 18px;
+                  border-radius: 10px;
+                  height: 65px;
+                  transition: background-color 2.8s ease-out, box-shadow 0.8s ease-out;
+                  background-color: rgb(249, 249, 253);
+                  background-image: linear-gradient(150deg, rgba(88, 105, 239, 1), rgb(108, 64, 219));
+                  color: aliceblue;
+                  box-shadow: 2px 2px 10px rgba(88, 105, 239, 0.3);
+                }
+
+                .con {
+                  color: #fff;
+                }
+              </style>
+            </a>
+          </li>
+          <br>
+          <li class="hahaha wuhu">
+            <a class="hahaha balala nav-link" href="studyolforusr.html">
+              <i class="icon-grid-2 menu-icon"></i>
+              <span class="menu-arrow">&nbsp&nbsp在线学习</span>
+            </a>
+          </li>
+          <br>
+          <li class="hahaha wuhu">
+            <a class="hahaha balala nav-link" href="datasrh.html">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-">&nbsp&nbsp数据查阅</span>
+            </a>
+          </li>
+          <br>
+          <li class="hahaha wuhu">
+            <a class="hahaha balala nav-link" href="selfmanage.html">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-">&nbsp&nbsp账户管理</span>
+            </a>
+          </li>
+          <br>
+          <li class="hahaha wuhu">
+            <a class="hahaha balala nav-link" href="followup.html">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-">&nbsp&nbsp案件追踪</span>
+            </a>
+          </li>
+          <br>
+          <li class="">
+            <a class="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="chat-container">
+        <div class="chat-messages">
+          <div class="message bot-message">
+            您好,请问您需要咨询什么法律问题呢？
+          </div>
+
+          <div class="message user-message">
+            我一个朋友，谷女士到余杭某小区快递点取快递时，被附近便利店店主郎某偷拍了视频。
+            郎某随后与朋友何某编造“女子出轨快递小哥”等聊天内容，发至微信群。
+            随后谣言不断被转发，仅微博话题“被造谣出轨女子至今找不到工作”阅读量就达4.7亿、
+            讨论5.8万人次。我朋友的人格权受到严重损害，因此丢了工作、找新工作被拒，并患上抑郁症。
+            如果提起公诉，那法院可能怎样审理此事呢？
+          </div>
+          <div class="message bot-message">
+            在这个案件中，朗某通过偷拍视频获取了谷女士的个人信息，并散布谣言，导致谷女士受到严重损害，
+            丢掉工作并患上抑郁症。因此，朗某可能会被判处有期徒刑，具体刑期根据案件的具体情况而定。
+          </div>
+          <div class="message user-message">
+            那还有什么可以注意的呢？
+          </div>
+          <div class="message bot-message">
+            可以注意以下法条：<br>
+
+            《中华人民共和国刑事诉讼法》第33条：规定了当事人在刑事诉讼中
+             享有的辩护权，包括自辩权和聘请辩护人的权利。<br>
+
+            《中华人民共和国刑事诉讼法》第34条：规定了辩护人的权利和义务，
+            包括代理当事人进行辩护、提出抗辩意见、申请调查取证等。<br>
+
+            《中华人民共和国刑事诉讼法》第37条：规定了辩护人的职责，包括代
+            理当事人行使辩护权利、保守当事人的秘密、提出辩护意见等。<br>
+
+            《中华人民共和国刑事诉讼法》第38条：规定了辩护人的权利，包括
+            会见被告人、询问被告人、阅卷等。<br>
+
+            《中华人民共和国刑事诉讼法》第40条：规定了辩护人的权利，包括
+            在庭审中提出抗辩意见、质证证人、出示证据等。<br>
+          </div>
+        </div>
+        <textarea class="input-field" placeholder="Type your message..." wrap="soft"></textarea>
+        <button class="send-button">Send</button>
+        <div class="typing-indicator">
+          <span>Bot is typing...</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="14" fill="#1f948c" viewBox="0 0 120 30">
+            <circle cx="15" cy="15" r="15" fill="var(--primary, red)">
+              <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s" from="15" repeatCount="indefinite"
+                to="15" values="15;9;15"></animate>
+              <animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="0.8s" from="1"
+                repeatCount="indefinite" to="1" values="1;.5;1"></animate>
+            </circle>
+            <circle cx="60" cy="15" r="9" fill="var(--primary, red)" fill-opacity="0.3">
+              <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s" from="9" repeatCount="indefinite"
+                to="9" values="9;15;9"></animate>
+              <animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="0.8s" from="0.5"
+                repeatCount="indefinite" to="0.5" values=".5;1;.5"></animate>
+            </circle>
+            <circle cx="105" cy="15" r="15" fill="var(--primary, red)">
+              <animate attributeName="r" begin="0s" calcMode="linear" dur="0.8s" from="15" repeatCount="indefinite"
+                to="15" values="15;9;15"></animate>
+              <animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="0.8s" from="1"
+                repeatCount="indefinite" to="1" values="1;.5;1"></animate>
+            </circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Chat container */
+      .chat-container {
+        width: 90%;
+        height: 700px;
+        /* 设置为页面宽度的90% */
+        max-width: 1200px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Chat messages */
+      .chat-messages {
+        flex: 1;
+        max-height: 70vh;
+        /* 设置最大高度为视口高度的70% */
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      /* Single message */
+      .message {
+        max-width: 600px;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      /* User message */
+      .user-message {
+        margin-left: auto;
+        background-color: #E7F8FF;
+        color: rgba(88, 105, 239, 1);
+      }
+
+      /* Bot message */
+      .bot-message {
+        margin-right: auto;
+        background-color: #f1f1f1;
+        color: #333;
+      }
+
+      /* Avatar */
+      .avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      /* Input field */
+      .input-field {
+        width: calc(100% - 20px);
+        height: 100px;
+        /* 设置输入框高度 */
+        padding: 10px;
+        border: none;
+        border-top: 1px solid #ccc;
+        box-sizing: border-box;
+        resize: vertical;
+        /* 允许垂直自动调整大小 */
+      }
+
+      /* Send button */
+      .send-button {
+        width: 100%;
+        padding: 10px;
+        background-color: rgba(88, 105, 239, 0.8);
+        color: #fff;
+        border: none;
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+      }
+
+      /* Typing indicator */
+      .typing-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .typing-indicator svg {
+        margin: 0 5px;
+      }
+    </style>
+
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <script src="vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <script src="js/dataTables.select.min.js"></script>
+
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
